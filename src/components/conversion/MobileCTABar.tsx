@@ -6,7 +6,7 @@ import { SITE } from "@/lib/constants";
 
 export function MobileCTABar() {
   return (
-    <div className="fixed inset-x-0 bottom-0 z-40 border-t border-slate-line bg-white/95 p-3 shadow-lift backdrop-blur-md lg:hidden">
+    <div className="fixed bottom-0 left-0 right-0 z-50 border-t border-slate-line bg-white/95 p-3 shadow-lift backdrop-blur-md lg:hidden">
       <div className="mx-auto flex max-w-lg gap-2">
         <a
           href={SITE.phoneHref}

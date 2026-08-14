@@ -48,6 +48,9 @@ export function Process() {
                       left ? "md:pr-16 md:text-right" : "md:order-2 md:pl-16 md:text-left"
                     }`}
                   >
+                    <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-full border-2 border-copper bg-white font-display text-sm font-bold text-ink shadow-soft md:hidden">
+                      {step.step}
+                    </div>
                     <p className="font-display text-sm font-semibold text-copper">
                       Step {step.step}
                     </p>
@@ -57,7 +60,7 @@ export function Process() {
                     <p className="mt-2 text-slate-text">{step.description}</p>
                   </div>
                   <div
-                    className={`absolute left-6 top-2 flex h-10 w-10 -translate-x-1/2 items-center justify-center rounded-full border-2 border-copper bg-white font-display text-sm font-bold text-ink shadow-soft md:left-1/2 ${
+                    className={`absolute left-6 top-2 hidden h-10 w-10 -translate-x-1/2 items-center justify-center rounded-full border-2 border-copper bg-white font-display text-sm font-bold text-ink shadow-soft md:flex md:left-1/2 ${
                       left ? "" : ""
                     }`}
                   >

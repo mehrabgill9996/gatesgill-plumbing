@@ -44,9 +44,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en-CA" className={`${display.variable} ${body.variable}`}>
-      <body className="min-h-screen bg-white font-body text-ink antialiased">
+      <body className="min-h-screen bg-white pb-20 font-body text-ink antialiased lg:pb-0">
         <Navbar />
-        <main className="pb-20 lg:pb-0">{children}</main>
+        <main>{children}</main>
         <Footer />
         <MobileCTABar />
         <ExitIntentPopup />

@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Clock3, Phone, ShieldCheck, Star } from "lucide-react";
+import { Clock3, Phone, ShieldCheck, Star, Wrench } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { SITE } from "@/lib/constants";
 
@@ -12,57 +12,107 @@ const TRUST_BADGES = [
   { label: "5-Star Rated", icon: Star },
 ] as const;
 
+const ease = [0.22, 1, 0.36, 1] as const;
+
+const fadeUp = {
+  hidden: { opacity: 0, y: 24 },
+  show: (delay: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.55, delay, ease },
+  }),
+};
+
 export function Hero() {
   return (
-    <section className="relative min-h-[100svh] overflow-hidden bg-ink pt-16 lg:pt-[4.5rem]">
-      <div
-        aria-hidden
-        className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(201,122,61,0.22),transparent_45%),linear-gradient(135deg,#0B2545_0%,#163A5F_55%,#0B2545_100%)]"
-      />
-      <div
-        aria-hidden
-        className="absolute -right-24 top-24 h-72 w-72 rounded-full bg-copper/20 blur-3xl"
-      />
-
-      <div className="container-site relative grid min-h-[calc(100svh-4rem)] items-center gap-10 py-14 lg:min-h-[calc(100svh-4.5rem)] lg:grid-cols-12 lg:gap-8 lg:py-20">
-        <motion.div
-          className="relative z-20 lg:col-span-6 xl:col-span-5"
-          initial={{ opacity: 0, y: 28 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: "easeOut" }}
-        >
-          <p className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-copper-light">
+    <section className="relative min-h-screen overflow-hidden bg-[#0B2545] pt-16 lg:pt-[4.5rem]">
+      <div className="relative grid min-h-[calc(100svh-4rem)] lg:min-h-[calc(100svh-4.5rem)] lg:grid-cols-2">
+        {/* LEFT — text */}
+        <div className="relative z-20 flex flex-col justify-center px-5 py-14 sm:px-6 lg:px-8 xl:pl-[max(2rem,calc((100vw-72rem)/2+2rem))] xl:pr-10">
+          <motion.p
+            className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-copper-light"
+            variants={fadeUp}
+            initial="hidden"
+            animate="show"
+            custom={0}
+          >
             Brampton &amp; GTA
-          </p>
-          <h1 className="mt-4 font-display text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-5xl lg:text-[3.4rem]">
-            Plumbing Done Right,{" "}
-            <span className="text-white">The First Time</span>
-          </h1>
-          <p className="mt-5 max-w-md text-base leading-relaxed text-white/75 sm:text-lg">
+          </motion.p>
+
+          <motion.h1
+            className="mt-8 max-w-xl font-display text-4xl font-bold leading-[1.15] tracking-tight text-white sm:text-5xl lg:mt-9 lg:text-[3.45rem] lg:leading-[1.16]"
+            variants={fadeUp}
+            initial="hidden"
+            animate="show"
+            custom={0.12}
+          >
+            Plumbing Done Right, The First Time
+          </motion.h1>
+
+          <motion.p
+            className="mt-5 max-w-md text-base leading-relaxed text-white/75 sm:text-lg"
+            variants={fadeUp}
+            initial="hidden"
+            animate="show"
+            custom={0.24}
+          >
             Licensed installs, repairs, and emergency response — with upfront
             pricing and a crew that treats your home like their own.
-          </p>
+          </motion.p>
 
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
-            <Button href="/quote" size="lg">
-              Get Install Quote
-            </Button>
-            <Button
-              href={SITE.phoneHref}
-              variant="ghost"
-              size="lg"
-              className="border-white/40"
+          <motion.div
+            className="mt-11 flex flex-col gap-3 sm:flex-row sm:items-center"
+            variants={fadeUp}
+            initial="hidden"
+            animate="show"
+            custom={0.36}
+          >
+            <motion.div
+              className="inline-flex rounded-md"
+              animate={{
+                boxShadow: [
+                  "0 0 0 0 rgba(201,122,61,0)",
+                  "0 0 22px 4px rgba(201,122,61,0.45)",
+                  "0 0 0 0 rgba(201,122,61,0)",
+                  "0 0 18px 3px rgba(201,122,61,0.35)",
+                  "0 0 0 0 rgba(201,122,61,0)",
+                ],
+              }}
+              transition={{
+                duration: 2.6,
+                times: [0, 0.25, 0.5, 0.75, 1],
+                ease: "easeInOut",
+              }}
             >
-              <Phone className="h-4 w-4" />
-              Call Now — {SITE.phone}
-            </Button>
-          </div>
+              <Button
+                href="/quote"
+                size="lg"
+                className="min-h-[3.25rem] px-8 text-base sm:text-lg"
+              >
+                Get Install Quote
+              </Button>
+            </motion.div>
 
-          <ul className="mt-6 flex flex-wrap gap-2">
+            <a
+              href={SITE.phoneHref}
+              className="inline-flex items-center justify-center gap-2 rounded-md border border-white/30 px-4 py-2.5 font-display text-sm font-medium tracking-tight text-white/80 transition-colors duration-200 hover:border-white/50 hover:text-white"
+            >
+              <Phone className="h-3.5 w-3.5 opacity-70" />
+              Call Now — {SITE.phone}
+            </a>
+          </motion.div>
+
+          <motion.ul
+            className="mt-5 flex flex-wrap items-center justify-center gap-3 lg:justify-start"
+            variants={fadeUp}
+            initial="hidden"
+            animate="show"
+            custom={0.48}
+          >
             {TRUST_BADGES.map(({ label, icon: Icon }) => (
               <li
                 key={label}
-                className="inline-flex items-center gap-1.5 rounded-md border border-white/15 bg-white/5 px-2.5 py-1.5 text-xs text-white/85 backdrop-blur-sm"
+                className="inline-flex shrink-0 items-center gap-1.5 rounded-md border border-white/15 bg-white/5 px-2.5 py-1.5 text-xs text-white/85"
               >
                 <Icon
                   className={`h-3.5 w-3.5 shrink-0 text-copper-light ${
@@ -75,45 +125,50 @@ export function Hero() {
                 </span>
               </li>
             ))}
-          </ul>
-        </motion.div>
+            <li className="inline-flex shrink-0 items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1.5 text-xs text-white/85">
+              <span
+                className="flex items-center gap-0.5 text-copper-light"
+                aria-label="5 star rating"
+              >
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <Star key={i} className="h-3 w-3 fill-current" />
+                ))}
+              </span>
+              <span className="font-display font-medium tracking-tight">
+                4.9 · 210+ reviews
+              </span>
+            </li>
+          </motion.ul>
+        </div>
 
-        <motion.div
-          className="relative z-10 lg:col-span-6 xl:col-span-7"
-          initial={{ opacity: 0, x: 40 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, delay: 0.15, ease: "easeOut" }}
-        >
-          <div className="relative ml-auto flex h-[480px] w-full max-w-lg items-end justify-center sm:h-[600px] lg:h-[680px] lg:max-w-none lg:translate-x-2 xl:translate-x-4">
-            {/* Plumber sits behind the floating stat card */}
-            <div className="pointer-events-none absolute inset-0 z-0 flex items-end justify-center overflow-visible">
-              <div className="relative h-[115%] w-[115%] max-w-[560px] origin-bottom scale-110 sm:scale-[1.18] lg:scale-125 [mask-image:linear-gradient(to_bottom,black_0%,black_58%,transparent_100%)] [-webkit-mask-image:linear-gradient(to_bottom,black_0%,black_58%,transparent_100%)]">
-                <Image
-                  src="/images/theplumberhd.png?v=restore1"
-                  alt="Smiling licensed plumber in blue coveralls with tool belt"
-                  fill
-                  priority
-                  unoptimized
-                  sizes="(max-width: 1024px) 100vw, 560px"
-                  className="object-contain object-bottom"
-                />
-              </div>
-            </div>
-
-            <motion.div
-              className="relative z-20 mb-6 max-w-[220px] self-end rounded-xl border border-slate-line bg-white p-4 shadow-none sm:mb-12 lg:absolute lg:bottom-8 lg:left-0 lg:mb-0 lg:-translate-x-2"
-              style={{ boxShadow: "none", filter: "none" }}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.55, duration: 0.5 }}
-            >
-              <p className="font-display text-3xl font-bold text-ink">500+</p>
-              <p className="mt-1 text-sm text-slate-text">
-                Installs completed across Brampton &amp; the GTA
-              </p>
-            </motion.div>
+        {/* RIGHT — single photo, diagonal top-left clip only */}
+        <div className="relative h-[420px] w-full sm:h-[520px] lg:h-auto lg:min-h-full">
+          <div
+            className="absolute inset-0"
+            style={{ clipPath: "polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%)" }}
+          >
+            <Image
+              src="/images/theplumberhd.png"
+              alt="Smiling licensed plumber in blue coveralls with tool belt"
+              fill
+              priority
+              unoptimized
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover object-[center_top]"
+            />
           </div>
-        </motion.div>
+        </div>
+      </div>
+
+      {/* Stat card — photo bottom-left only, explicit offsets */}
+      <div className="absolute bottom-[10%] left-5 z-20 w-[210px] rounded-xl border border-slate-line border-l-[3px] border-l-copper bg-white p-4 shadow-lift sm:left-8 lg:left-[52%] lg:bottom-[9%]">
+        <div className="mb-2 inline-flex h-8 w-8 items-center justify-center rounded-md bg-copper/10 text-copper">
+          <Wrench className="h-4 w-4" aria-hidden />
+        </div>
+        <p className="font-display text-3xl font-bold text-ink">500+</p>
+        <p className="mt-1 text-sm leading-snug text-slate-text">
+          Installs completed across Brampton &amp; the GTA
+        </p>
       </div>
     </section>
   );
