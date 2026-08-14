@@ -61,14 +61,21 @@ export function Hero() {
           </motion.p>
 
           <motion.div
-            className="mt-11 flex flex-col gap-3 sm:flex-row sm:items-center"
+            className="mt-11 flex flex-col items-center gap-3 sm:flex-row sm:items-center"
             variants={fadeUp}
             initial="hidden"
             animate="show"
             custom={0.36}
           >
+            <Button
+              href="/quote"
+              size="lg"
+              className="min-h-[3.25rem] px-8 text-base sm:text-lg lg:hidden"
+            >
+              Get Install Quote
+            </Button>
             <motion.div
-              className="inline-flex rounded-md"
+              className="hidden rounded-md lg:inline-flex"
               animate={{
                 boxShadow: [
                   "0 0 0 0 rgba(201,122,61,0)",
