@@ -156,7 +156,7 @@ export function Hero() {
             style={{ clipPath: "polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%)" }}
           >
             <Image
-              src="/images/theplumberhd.png"
+              src="/images/theplumberhd.webp"
               alt="Smiling licensed plumber in blue coveralls with tool belt"
               fill
               priority
