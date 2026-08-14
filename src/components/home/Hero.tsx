@@ -25,10 +25,10 @@ const fadeUp = {
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen overflow-hidden bg-[#0B2545] pt-16 lg:pt-[4.5rem]">
-      <div className="relative grid min-h-[calc(100svh-4rem)] lg:min-h-[calc(100svh-4.5rem)] lg:grid-cols-2">
+    <section className="relative overflow-hidden bg-[#0B2545] pt-16 lg:min-h-screen lg:pt-[4.5rem]">
+      <div className="relative grid lg:min-h-[calc(100svh-4.5rem)] lg:grid-cols-2">
         {/* LEFT — text */}
-        <div className="relative z-20 flex flex-col items-center justify-center px-5 py-14 text-center sm:px-6 lg:items-start lg:px-8 lg:text-left xl:pl-[max(2rem,calc((100vw-72rem)/2+2rem))] xl:pr-10">
+        <div className="relative z-20 flex flex-col items-center justify-center px-5 py-8 text-center sm:px-6 lg:items-start lg:px-8 lg:py-14 lg:text-left xl:pl-[max(2rem,calc((100vw-72rem)/2+2rem))] xl:pr-10">
           <motion.p
             className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-copper-light"
             variants={fadeUp}
@@ -61,6 +61,7 @@ export function Hero() {
           </motion.p>
 
           <motion.div
+            id="hero-cta-row"
             className="mt-11 flex flex-col items-center gap-3 sm:flex-row sm:items-center lg:justify-start"
             variants={fadeUp}
             initial="hidden"
