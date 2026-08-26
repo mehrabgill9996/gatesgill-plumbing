@@ -63,7 +63,7 @@ export default function AboutPage() {
           <div className="relative aspect-[4/5] overflow-hidden rounded-tl-[2.5rem] rounded-br-[2.5rem] shadow-lift">
             <Image
               src={IMAGES.van}
-              alt="Plumbing service vehicle ready for a Brampton job"
+              alt="Licensed plumber working under a bathroom sink with professional tools"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"

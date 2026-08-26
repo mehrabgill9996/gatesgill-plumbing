@@ -45,7 +45,7 @@ export function Hero() {
         {/* LEFT — text */}
         <div className="relative z-20 flex flex-col items-center justify-center px-5 py-8 text-center sm:px-6 lg:items-start lg:px-8 lg:py-14 lg:text-left xl:pl-[max(2rem,calc((100vw-72rem)/2+2rem))] xl:pr-10">
           <motion.p
-            className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-copper"
+            className="font-display text-base font-semibold uppercase tracking-[0.2em] text-copper sm:text-lg"
             variants={fadeUp}
             initial="hidden"
             animate="show"
