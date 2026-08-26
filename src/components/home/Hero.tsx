@@ -25,12 +25,27 @@ const fadeUp = {
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden bg-[#0B2545] pt-16 lg:min-h-screen lg:pt-[4.5rem]">
-      <div className="relative grid lg:min-h-[calc(100svh-4.5rem)] lg:grid-cols-2">
+    <section className="relative overflow-hidden pt-16 lg:min-h-screen lg:pt-[4.5rem]">
+      <div className="pointer-events-none absolute inset-0 z-0">
+        <Image
+          src="/images/herobgelf.webp"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center"
+        />
+        <div
+          className="absolute inset-0 bg-gradient-to-r from-white/90 via-white/55 to-white/10 lg:from-white/80 lg:via-white/40 lg:to-transparent"
+          aria-hidden
+        />
+      </div>
+
+      <div className="relative z-10 grid lg:min-h-[calc(100svh-4.5rem)] lg:grid-cols-2">
         {/* LEFT — text */}
         <div className="relative z-20 flex flex-col items-center justify-center px-5 py-8 text-center sm:px-6 lg:items-start lg:px-8 lg:py-14 lg:text-left xl:pl-[max(2rem,calc((100vw-72rem)/2+2rem))] xl:pr-10">
           <motion.p
-            className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-copper-light"
+            className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-copper"
             variants={fadeUp}
             initial="hidden"
             animate="show"
@@ -40,7 +55,7 @@ export function Hero() {
           </motion.p>
 
           <motion.h1
-            className="mt-8 max-w-xl font-display text-4xl font-bold leading-[1.15] tracking-tight text-white sm:text-5xl lg:mt-9 lg:text-[3.45rem] lg:leading-[1.16]"
+            className="mt-8 max-w-xl font-display text-4xl font-bold leading-[1.15] tracking-tight text-ink sm:text-5xl lg:mt-9 lg:text-[3.45rem] lg:leading-[1.16]"
             variants={fadeUp}
             initial="hidden"
             animate="show"
@@ -50,7 +65,7 @@ export function Hero() {
           </motion.h1>
 
           <motion.p
-            className="mt-5 max-w-md text-base leading-relaxed text-white/75 sm:text-lg"
+            className="mt-5 max-w-md text-base leading-relaxed text-slate-text sm:text-lg"
             variants={fadeUp}
             initial="hidden"
             animate="show"
@@ -103,9 +118,9 @@ export function Hero() {
 
             <a
               href={SITE.phoneHref}
-              className="inline-flex items-center justify-center gap-2 rounded-md border border-white/30 px-4 py-2.5 font-display text-sm font-medium tracking-tight text-white/80 transition-colors duration-200 hover:border-white/50 hover:text-white"
+              className="group inline-flex items-center justify-center gap-2 rounded-md border border-ink/20 bg-white/70 px-4 py-2.5 font-display text-sm font-medium tracking-tight text-ink backdrop-blur-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-copper/60 hover:bg-white hover:shadow-copper"
             >
-              <Phone className="h-3.5 w-3.5 opacity-70" />
+              <Phone className="h-3.5 w-3.5 text-copper transition-transform duration-200 group-hover:scale-110" />
               Call Now — {SITE.phone}
             </a>
           </motion.div>
@@ -120,11 +135,11 @@ export function Hero() {
             {TRUST_BADGES.map(({ label, icon: Icon }) => (
               <li
                 key={label}
-                className="inline-flex shrink-0 items-center gap-1.5 rounded-md border border-white/15 bg-white/5 px-2.5 py-1.5 text-xs text-white/85"
+                className="inline-flex shrink-0 items-center gap-1.5 rounded-md border border-ink/10 bg-white/85 px-2.5 py-1.5 text-xs text-ink shadow-soft backdrop-blur-sm"
               >
                 <Icon
-                  className={`h-3.5 w-3.5 shrink-0 text-copper-light ${
-                    label === "5-Star Rated" ? "fill-copper-light" : ""
+                  className={`h-3.5 w-3.5 shrink-0 text-copper ${
+                    label === "5-Star Rated" ? "fill-copper" : ""
                   }`}
                   aria-hidden
                 />
@@ -133,9 +148,9 @@ export function Hero() {
                 </span>
               </li>
             ))}
-            <li className="inline-flex shrink-0 items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1.5 text-xs text-white/85">
+            <li className="inline-flex shrink-0 items-center gap-2 rounded-full border border-ink/10 bg-white/85 px-3 py-1.5 text-xs text-ink shadow-soft backdrop-blur-sm">
               <span
-                className="flex items-center gap-0.5 text-copper-light"
+                className="flex items-center gap-0.5 text-copper"
                 aria-label="5 star rating"
               >
                 {Array.from({ length: 5 }).map((_, i) => (
@@ -169,7 +184,7 @@ export function Hero() {
       </div>
 
       {/* Stat card — photo bottom-left only, explicit offsets */}
-      <div className="absolute bottom-[10%] left-5 z-20 w-[210px] rounded-xl border border-slate-line border-l-[3px] border-l-copper bg-white p-4 shadow-lift sm:left-8 lg:left-[52%] lg:bottom-[9%]">
+      <div className="absolute bottom-[10%] left-5 z-20 w-[210px] rounded-xl border border-slate-line/80 border-l-[3px] border-l-copper bg-white/95 p-4 shadow-lift backdrop-blur-sm sm:left-8 lg:left-[52%] lg:bottom-[9%]">
         <div className="mb-2 inline-flex h-8 w-8 items-center justify-center rounded-md bg-copper/10 text-copper">
           <Wrench className="h-4 w-4" aria-hidden />
         </div>

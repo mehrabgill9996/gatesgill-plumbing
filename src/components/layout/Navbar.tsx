@@ -31,22 +31,16 @@ export function Navbar() {
       className={`fixed inset-x-0 top-0 z-50 border-b transition-[background-color,border-color,box-shadow,backdrop-filter,-webkit-backdrop-filter] duration-500 ease-out ${
         solid
           ? "border-slate-line/80 bg-white/95 shadow-soft backdrop-blur-md"
-          : "border-transparent bg-transparent shadow-none backdrop-blur-none"
+          : "border-ink/5 bg-white/75 shadow-soft backdrop-blur-md"
       }`}
     >
       <div className="container-site flex h-16 items-center justify-between gap-4 lg:h-[4.5rem]">
         <Link
           href="/"
-          className={`font-display text-lg font-bold tracking-tight transition-colors duration-500 sm:text-xl ${
-            solid ? "text-ink" : "text-white"
-          }`}
+          className="font-display text-lg font-bold tracking-tight text-ink transition-colors duration-500 sm:text-xl"
         >
           Gatesgill{" "}
-          <span
-            className={`transition-colors duration-500 ${
-              solid ? "text-copper" : "text-copper-light"
-            }`}
-          >
+          <span className="text-copper transition-colors duration-500">
             Plumbing
           </span>
         </Link>
@@ -62,13 +56,9 @@ export function Navbar() {
                 key={link.href}
                 href={link.href}
                 className={`font-display text-sm font-medium transition-colors duration-500 ${
-                  solid
-                    ? active
-                      ? "text-copper"
-                      : "text-ink/80 hover:text-ink"
-                    : active
-                      ? "text-copper-light"
-                      : "text-white/90 hover:text-white"
+                  active
+                    ? "text-copper"
+                    : "text-ink hover:text-copper"
                 }`}
               >
                 {link.label}
@@ -80,9 +70,7 @@ export function Navbar() {
         <div className="hidden items-center gap-3 lg:flex">
           <a
             href={SITE.phoneHref}
-            className={`inline-flex items-center gap-2 font-display text-sm font-semibold transition-colors duration-500 ${
-              solid ? "text-ink" : "text-white"
-            }`}
+            className="inline-flex items-center gap-2 font-display text-sm font-semibold text-ink transition-colors duration-500 hover:text-copper"
           >
             <Phone className="h-4 w-4 text-copper" />
             {SITE.phone}
@@ -94,9 +82,7 @@ export function Navbar() {
 
         <button
           type="button"
-          className={`rounded-md p-2 transition-colors duration-500 lg:hidden ${
-            solid ? "text-ink" : "text-white"
-          }`}
+          className="rounded-md p-2 text-ink transition-colors duration-500 hover:text-copper lg:hidden"
           onClick={() => setOpen((v) => !v)}
           aria-label={open ? "Close menu" : "Open menu"}
         >
