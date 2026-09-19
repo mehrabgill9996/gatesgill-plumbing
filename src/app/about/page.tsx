@@ -7,11 +7,11 @@ import { IMAGES, SITE } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Meet Khalsa M.S. Plumbing and Renovation Inc. — a Brampton plumber offering plumbing and renovation, open 24 hours.",
+    "Meet Soft Water Plumbing & Drain — a Brampton plumber offering residential and commercial plumbing for new construction or renovation.",
   openGraph: {
-    title: "About Khalsa M.S. Plumbing and Renovation Inc.",
+    title: "About Soft Water Plumbing & Drain",
     description:
-      "Our story and the crew behind plumbing and renovation in Brampton and nearby areas.",
+      "Our story and the crew behind residential and commercial plumbing in Brampton and nearby areas.",
   },
 };
 
@@ -51,9 +51,9 @@ export default function AboutPage() {
             Built in Brampton. Trusted nearby.
           </h1>
           <p className="mt-5 max-w-2xl text-lg text-white/75">
-            Khalsa M.S. Plumbing and Renovation Inc. started with a simple
-            standard: show up on time, quote honestly, and leave every job
-            better than the last crew would have.
+            Soft Water Plumbing &amp; Drain started with a simple standard: show
+            up on time, quote honestly, and leave every job better than the last
+            crew would have.
           </p>
         </div>
       </section>
@@ -73,7 +73,7 @@ export default function AboutPage() {
             <SectionHeading
               eyebrow="Our story"
               title="Local plumbers with agency-level standards"
-              description={`${SITE.name} provides plumbing and renovation services in Brampton and nearby areas — open 24 hours — for clients who want premium results without the runaround.`}
+              description={`${SITE.name} provides residential and commercial plumbing services in Brampton and nearby areas — new construction or renovation — for clients who want premium results without the runaround.`}
             />
             <p className="mt-4 text-slate-text leading-relaxed">
               Whether it&apos;s a water heater, a fixture upgrade, drain work,

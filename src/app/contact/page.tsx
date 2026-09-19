@@ -8,9 +8,9 @@ import { SITE } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Contact Khalsa M.S. Plumbing and Renovation Inc. in Brampton — call or send a message. Open 24 hours.",
+    "Contact Soft Water Plumbing & Drain in Brampton — call or send a message. Free install quotes available.",
   openGraph: {
-    title: "Contact Khalsa M.S. Plumbing and Renovation Inc.",
+    title: "Contact Soft Water Plumbing & Drain",
     description:
       "Reach our Brampton team for residential and commercial plumbing in Brampton and nearby areas.",
   },
@@ -65,8 +65,8 @@ export default function ContactPage() {
 
             <div className="overflow-hidden rounded-2xl shadow-soft ring-1 ring-slate-line">
               <iframe
-                title="Khalsa M.S. Plumbing and Renovation Inc. — 172 Torrance Woods, Brampton, Ontario"
-                src="https://maps.google.com/maps?q=172%20Torrance%20Woods%2C%20Brampton%2C%20ON%20L6Y%204K2&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                title="Soft Water Plumbing & Drain — 11 Lisa St. #712, Brampton, Ontario"
+                src="https://maps.google.com/maps?q=11%20Lisa%20St%20%23712%2C%20Brampton%2C%20ON%20L6T%204T8&t=&z=16&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="280"
                 style={{ border: 0 }}

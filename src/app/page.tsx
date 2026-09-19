@@ -12,11 +12,11 @@ import { SITE } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `${SITE.name} | Brampton Plumbing Installs & Repairs`,
   description:
-    "Khalsa M.S. Plumbing and Renovation Inc. — plumbing and renovation in Brampton, ON. Open 24 hours. Get your free install quote today.",
+    "Soft Water Plumbing & Drain — residential and commercial plumbing in Brampton, ON. New construction or renovation. Get your free install quote today.",
   openGraph: {
-    title: "Plumbing Done Right, The First Time | Khalsa M.S. Plumbing",
+    title: "Plumbing Done Right, The First Time | Soft Water Plumbing & Drain",
     description:
-      "5.0 Google reviews. Serving Brampton and nearby areas. Call (437) 438-7502.",
+      "5.0 Google reviews. Serving Brampton and nearby areas. Call (416) 475-4166.",
   },
 };
 

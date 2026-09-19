@@ -4,9 +4,9 @@ import { QuoteForm } from "@/components/quote/QuoteForm";
 export const metadata: Metadata = {
   title: "Get Install Quote",
   description:
-    "Request a free, no-obligation plumbing install quote from Khalsa M.S. Plumbing and Renovation Inc. Response within one business hour.",
+    "Request a free, no-obligation plumbing install quote from Soft Water Plumbing & Drain. Response within one business hour.",
   openGraph: {
-    title: "Free Install Quote | Khalsa M.S. Plumbing",
+    title: "Free Install Quote | Soft Water Plumbing & Drain",
     description:
       "Multi-step quote request — quick, clear, and completely free. Serving Brampton and nearby areas.",
   },

@@ -8,8 +8,8 @@ export function Footer() {
       <div className="container-site grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-4">
         <div className="lg:col-span-1">
           <p className="font-display text-xl font-bold">
-            Khalsa M.S.{" "}
-            <span className="text-copper-light">Plumbing &amp; Renovation</span>
+            Soft Water{" "}
+            <span className="text-copper-light">Plumbing &amp; Drain</span>
           </p>
           <p className="mt-3 text-sm leading-relaxed text-white/70">
             {SITE.tagline} Plumber in Brampton, Ontario — serving Brampton and
@@ -92,7 +92,7 @@ export function Footer() {
       <div className="border-t border-white/10">
         <div className="container-site flex flex-col gap-3 py-5 text-xs text-white/50 sm:flex-row sm:items-center sm:justify-between">
           <p>
-            © {new Date().getFullYear()} {SITE.name} All rights reserved.
+            © {new Date().getFullYear()} {SITE.name}. All rights reserved.
           </p>
           <div className="flex gap-4">
             <Link href="/privacy-policy" className="hover:text-white/80">

@@ -26,14 +26,14 @@ export const metadata: Metadata = {
     template: `%s | ${SITE.name}`,
   },
   description:
-    "Khalsa M.S. Plumbing and Renovation Inc. — plumber in Brampton, Ontario. Open 24 hours. Call (437) 438-7502.",
+    "Soft Water Plumbing & Drain — residential and commercial plumbing in Brampton, Ontario. New construction or renovation. Call (416) 475-4166.",
   openGraph: {
     type: "website",
     locale: "en_CA",
     siteName: SITE.name,
     title: `${SITE.name} | Brampton Plumber`,
     description:
-      "Plumbing and renovation in Brampton and nearby areas. Open 24 hours.",
+      "Residential and commercial plumbing services in Brampton and nearby areas. New construction or renovation.",
   },
 };
 

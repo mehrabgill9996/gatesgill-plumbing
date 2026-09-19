@@ -337,7 +337,7 @@ export function QuoteForm() {
                     Quote request received
                   </h2>
                   <p className="mx-auto mt-3 max-w-md text-slate-text">
-                    Thanks, {form.name || "there"}. A Khalsa M.S. tech will reach
+                    Thanks, {form.name || "there"}. A Soft Water Plumbing tech will reach
                     out within one business hour during regular hours — sooner
                     for emergencies.
                   </p>
