@@ -1,13 +1,12 @@
 export const SITE = {
-  name: "Soft Water Plumbing & Drain",
-  shortName: "Soft Water Plumbing",
-  tagline:
-    "Residential and commercial plumbing services — new construction or renovation.",
-  phone: "(416) 475-4166",
-  phoneHref: "tel:+14164754166",
-  address: "11 Lisa St. #712, Brampton, ON",
-  fullAddress: "11 Lisa St. #712, Brampton, ON L6T 4T8",
-  hours: "Call to confirm hours",
+  name: "Khalsa M.S. Plumbing and Renovation Inc.",
+  shortName: "Khalsa M.S. Plumbing",
+  tagline: "Plumbing and renovation in Brampton — open 24 hours.",
+  phone: "(437) 438-7502",
+  phoneHref: "tel:+14374387502",
+  address: "172 Torrance Woods, Brampton, ON",
+  fullAddress: "172 Torrance Woods, Brampton, ON L6Y 4K2",
+  hours: "Open 24 hours",
   serviceAreas: ["Brampton", "Nearby areas"],
   rating: "5.0",
   reviewCountLabel: "Google reviews",
@@ -54,7 +53,7 @@ export const SERVICES = [
     id: "emergency",
     title: "Emergency Plumbing",
     description:
-      "Fast response for floods, burst pipes, and no-hot-water crises. We stabilize first, then fix it right.",
+      "24/7 response for floods, burst pipes, and no-hot-water crises. We stabilize first, then fix it right.",
     icon: "siren",
   },
   {
@@ -121,22 +120,24 @@ export const PROCESS_STEPS = [
 
 export const REVIEWS = [
   {
-    name: "Nasim Akhtar",
+    name: "Amandeep Chopra",
     neighborhood: "Brampton, ON",
     rating: 5,
-    quote: "Highly professional work as per the agreement.",
+    quote: "The pricing was reasonable for the level of service I received.",
   },
   {
-    name: "Yasser Ahmad",
+    name: "Ravneet Singh",
     neighborhood: "Brampton, ON",
     rating: 5,
-    quote: "Highly recommend Soft Water Plumbing for any plumbing work.",
+    quote:
+      "The attention to detail and efficient work exceeded my expectations.",
   },
   {
-    name: "Antonio Ricci",
+    name: "Manpreet Saini",
     neighborhood: "Brampton, ON",
     rating: 5,
-    quote: "Highly recommend their services!",
+    quote:
+      "I highly recommend him for any project, big or small—you'll be in great hands.",
   },
 ] as const;
 

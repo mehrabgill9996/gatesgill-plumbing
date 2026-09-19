@@ -58,7 +58,7 @@ export function WhyChooseUs() {
       />
       <div className="container-site relative">
         <SectionHeading
-          eyebrow="Why Soft Water"
+          eyebrow="Why Khalsa M.S."
           title="The difference shows up on the job"
           description="Numbers matter — but so does how we show up. Here's what Brampton homeowners and businesses count on."
           align="center"

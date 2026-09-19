@@ -6,9 +6,9 @@ import { FAQ_CATEGORIES } from "@/lib/faqs";
 export const metadata: Metadata = {
   title: "FAQs",
   description:
-    "Answers about plumbing installs, pricing, emergency service, and service areas for Soft Water Plumbing & Drain in Brampton.",
+    "Answers about plumbing installs, pricing, emergency service, and service areas for Khalsa M.S. Plumbing and Renovation Inc. in Brampton.",
   openGraph: {
-    title: "Plumbing FAQs | Soft Water Plumbing & Drain",
+    title: "Plumbing FAQs | Khalsa M.S. Plumbing",
     description:
       "Installation, pricing, emergencies, and service area questions — answered clearly.",
   },

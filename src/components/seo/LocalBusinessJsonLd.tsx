@@ -10,15 +10,29 @@ export function LocalBusinessJsonLd() {
     url: "https://gatesgillplumbing.com",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "11 Lisa St. #712",
+      streetAddress: "172 Torrance Woods",
       addressLocality: "Brampton",
       addressRegion: "ON",
-      postalCode: "L6T 4T8",
+      postalCode: "L6Y 4K2",
       addressCountry: "CA",
     },
     areaServed: {
       "@type": "Place",
       name: "Brampton and nearby areas",
+    },
+    openingHoursSpecification: {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday",
+      ],
+      opens: "00:00",
+      closes: "23:59",
     },
     aggregateRating: {
       "@type": "AggregateRating",

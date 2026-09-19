@@ -39,11 +39,11 @@ export function Navbar() {
           href="/"
           className="font-display text-lg font-bold tracking-tight text-ink transition-colors duration-500 sm:text-xl"
         >
-          Soft Water{" "}
+          Khalsa M.S.{" "}
           <span className="text-copper transition-colors duration-500">
             Plumbing
           </span>
-          <span className="hidden sm:inline"> &amp; Drain</span>
+          <span className="hidden sm:inline"> &amp; Renovation</span>
         </Link>
 
         <nav className="hidden items-center gap-7 lg:flex">

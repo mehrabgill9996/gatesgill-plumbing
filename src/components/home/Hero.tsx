@@ -2,13 +2,13 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Building2, Phone, ShieldCheck, Star, Wrench } from "lucide-react";
+import { Clock3, Phone, ShieldCheck, Star, Wrench } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { SITE } from "@/lib/constants";
 
 const TRUST_BADGES = [
   { label: "Licensed & Insured", icon: ShieldCheck },
-  { label: "Residential & Commercial", icon: Building2 },
+  { label: "Open 24 Hours", icon: Clock3 },
   { label: "5-Star Rated", icon: Star },
 ] as const;
 
@@ -71,9 +71,8 @@ export function Hero() {
             animate="show"
             custom={0.24}
           >
-            Residential and commercial plumbing for new construction or
-            renovation — with upfront pricing and a crew that treats your home
-            like their own.
+            Plumbing and renovation in Brampton — open 24 hours, with upfront
+            pricing and a crew that treats your home like their own.
           </motion.p>
 
           <motion.div

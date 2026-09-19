@@ -62,9 +62,9 @@ export const FAQ_CATEGORIES: FAQCategory[] = [
           "Burst pipes, major leaks, sewage backups, no water, or no hot water in winter. If you're unsure, call us — we'll tell you honestly whether it can wait.",
       },
       {
-        question: "How quickly can you come out?",
+        question: "Are you available 24/7?",
         answer:
-          "Call (416) 475-4166 and we'll tell you honestly whether it can wait. We serve Brampton and nearby areas and move fast when something can't wait.",
+          "Yes. We're open 24 hours. Call (437) 438-7502 and we'll tell you honestly whether it can wait. We serve Brampton and nearby areas and move fast when something can't wait.",
       },
     ],
   },
@@ -75,7 +75,7 @@ export const FAQ_CATEGORIES: FAQCategory[] = [
       {
         question: "Which cities do you serve?",
         answer:
-          "We're based at 11 Lisa St. in Brampton and serve Brampton and nearby areas. Outside that? Reach out — we often can help neighbouring communities too.",
+          "We're based at 172 Torrance Woods in Brampton and serve Brampton and nearby areas. Outside that? Reach out — we often can help neighbouring communities too.",
       },
       {
         question: "Do you work on both houses and condos?",
