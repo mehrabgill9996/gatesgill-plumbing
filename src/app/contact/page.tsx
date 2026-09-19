@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Mail, MapPin, Phone, Clock } from "lucide-react";
+import { MapPin, Phone, Clock } from "lucide-react";
 import { ContactForm } from "@/components/contact/ContactForm";
 import { Button } from "@/components/ui/Button";
 import { CTABanner } from "@/components/ui/CTABanner";
@@ -8,11 +8,11 @@ import { SITE } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Contact Gatesgill Plumbing in Brampton — call, email, or send a message. Free install quotes available.",
+    "Contact Soft Water Plumbing & Drain in Brampton — call or send a message. Free install quotes available.",
   openGraph: {
-    title: "Contact Gatesgill Plumbing",
+    title: "Contact Soft Water Plumbing & Drain",
     description:
-      "Reach our Brampton team for installs, repairs, and emergencies across the GTA.",
+      "Reach our Brampton team for residential and commercial plumbing in Brampton and nearby areas.",
   },
 };
 
@@ -57,12 +57,6 @@ export default function ContactPage() {
                   </a>
                 </li>
                 <li className="flex gap-3">
-                  <Mail className="mt-0.5 h-5 w-5 shrink-0 text-copper" />
-                  <a href={SITE.emailHref} className="hover:text-ink">
-                    {SITE.email}
-                  </a>
-                </li>
-                <li className="flex gap-3">
                   <Clock className="mt-0.5 h-5 w-5 shrink-0 text-copper" />
                   <span>{SITE.hours}</span>
                 </li>
@@ -71,8 +65,8 @@ export default function ContactPage() {
 
             <div className="overflow-hidden rounded-2xl shadow-soft ring-1 ring-slate-line">
               <iframe
-                title="Gatesgill Plumbing location — Brampton, Ontario"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184552.2543589141!2d-79.8666!3d43.7315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b15eaa5d05abf%3A0x352d31667f750370!2sBrampton%2C%20ON!5e0!3m2!1sen!2sca!4v1700000000000!5m2!1sen!2sca"
+                title="Soft Water Plumbing & Drain — 11 Lisa St. #712, Brampton, Ontario"
+                src="https://maps.google.com/maps?q=11%20Lisa%20St%20%23712%2C%20Brampton%2C%20ON%20L6T%204T8&t=&z=16&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="280"
                 style={{ border: 0 }}

@@ -7,32 +7,25 @@ export function LocalBusinessJsonLd() {
     name: SITE.name,
     description: SITE.tagline,
     telephone: SITE.phone,
-    email: SITE.email,
     url: "https://gatesgillplumbing.com",
     address: {
       "@type": "PostalAddress",
+      streetAddress: "11 Lisa St. #712",
       addressLocality: "Brampton",
       addressRegion: "ON",
+      postalCode: "L6T 4T8",
       addressCountry: "CA",
     },
-    areaServed: SITE.serviceAreas.map((name) => ({
-      "@type": "City",
-      name,
-    })),
-    openingHoursSpecification: [
-      {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        opens: "07:00",
-        closes: "19:00",
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: "Saturday",
-        opens: "08:00",
-        closes: "16:00",
-      },
-    ],
+    areaServed: {
+      "@type": "Place",
+      name: "Brampton and nearby areas",
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: SITE.rating,
+      bestRating: "5",
+      reviewCount: "3",
+    },
   };
 
   return (

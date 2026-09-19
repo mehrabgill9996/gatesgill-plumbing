@@ -2,16 +2,16 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { IMAGES, SITE, TEAM } from "@/lib/constants";
+import { IMAGES, SITE } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Meet Gatesgill Plumbing — a Brampton-based team built on clean installs, honest quotes, and workmanship that lasts.",
+    "Meet Soft Water Plumbing & Drain — a Brampton plumber offering residential and commercial plumbing for new construction or renovation.",
   openGraph: {
-    title: "About Gatesgill Plumbing",
+    title: "About Soft Water Plumbing & Drain",
     description:
-      "Our story, values, and the crew behind licensed plumbing installs across Brampton and the GTA.",
+      "Our story and the crew behind residential and commercial plumbing in Brampton and nearby areas.",
   },
 };
 
@@ -48,12 +48,12 @@ export default function AboutPage() {
             About
           </p>
           <h1 className="mt-3 max-w-3xl font-display text-4xl font-bold tracking-tight text-white sm:text-5xl">
-            Built in Brampton. Trusted across the GTA.
+            Built in Brampton. Trusted nearby.
           </h1>
           <p className="mt-5 max-w-2xl text-lg text-white/75">
-            Gatesgill Plumbing started with a simple standard: show up on time,
-            quote honestly, and leave every install better than the last crew
-            would have.
+            Soft Water Plumbing &amp; Drain started with a simple standard: show
+            up on time, quote honestly, and leave every job better than the last
+            crew would have.
           </p>
         </div>
       </section>
@@ -73,13 +73,13 @@ export default function AboutPage() {
             <SectionHeading
               eyebrow="Our story"
               title="Local plumbers with agency-level standards"
-              description={`${SITE.name} is a family-rooted service company serving homeowners who want premium results without the runaround. We specialize in installs and repairs that are code-compliant, warranty-backed, and finished clean.`}
+              description={`${SITE.name} provides residential and commercial plumbing services in Brampton and nearby areas — new construction or renovation — for clients who want premium results without the runaround.`}
             />
             <p className="mt-4 text-slate-text leading-relaxed">
-              Whether it&apos;s a tankless water heater, a fixture upgrade, or a
-              midnight emergency, the same crew discipline applies: diagnose
-              carefully, communicate clearly, and deliver work we&apos;re proud
-              to put our name on.
+              Whether it&apos;s a water heater, a fixture upgrade, drain work,
+              or a renovation rough-in, the same crew discipline applies:
+              diagnose carefully, communicate clearly, and deliver work
+              we&apos;re proud to put our name on.
             </p>
           </div>
         </div>
@@ -105,35 +105,6 @@ export default function AboutPage() {
                 <p className="mt-2 text-sm leading-relaxed text-slate-text">
                   {value.text}
                 </p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-20 sm:py-24">
-        <div className="container-site">
-          <SectionHeading
-            eyebrow="The team"
-            title="People behind the pipework"
-            description="Experienced technicians who treat every home like a referral waiting to happen."
-          />
-          <div className="mt-12 grid gap-6 sm:grid-cols-3">
-            {TEAM.map((member) => (
-              <article key={member.name} className="group">
-                <div className="relative aspect-[3/4] overflow-hidden rounded-2xl">
-                  <Image
-                    src={member.image}
-                    alt={`${member.name}, ${member.role}`}
-                    fill
-                    sizes="(max-width: 640px) 100vw, 33vw"
-                    className="object-cover transition duration-500 group-hover:scale-105"
-                  />
-                </div>
-                <h3 className="mt-4 font-display text-lg font-bold text-ink">
-                  {member.name}
-                </h3>
-                <p className="text-sm text-slate-text">{member.role}</p>
               </article>
             ))}
           </div>

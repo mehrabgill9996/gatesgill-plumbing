@@ -147,12 +147,12 @@ export default function PrivacyPolicyPage() {
             <p className="mt-3">
               For privacy questions or requests, contact {SITE.name} at{" "}
               <a
-                href={SITE.emailHref}
+                href={SITE.phoneHref}
                 className="font-medium text-copper underline-offset-2 hover:underline"
               >
-                {SITE.email}
-              </a>{" "}
-              or {SITE.phone}, or write to us at {SITE.fullAddress}.
+                {SITE.phone}
+              </a>
+              , or write to us at {SITE.fullAddress}.
             </p>
           </section>
         </div>

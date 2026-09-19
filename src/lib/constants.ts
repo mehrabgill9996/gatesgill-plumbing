@@ -1,14 +1,16 @@
 export const SITE = {
-  name: "Gatesgill Plumbing",
-  tagline: "Plumbing done right, the first time.",
-  phone: "(905) 555-0187",
-  phoneHref: "tel:+19055550187",
-  email: "hello@gatesgillplumbing.com",
-  emailHref: "mailto:hello@gatesgillplumbing.com",
-  address: "Brampton, Ontario",
-  fullAddress: "Brampton, ON L6Y 0A1, Canada",
-  hours: "Mon–Fri 7am–7pm · Sat 8am–4pm · Emergency 24/7",
-  serviceAreas: ["Brampton", "Mississauga", "Caledon", "Vaughan"],
+  name: "Soft Water Plumbing & Drain",
+  shortName: "Soft Water Plumbing",
+  tagline:
+    "Residential and commercial plumbing services — new construction or renovation.",
+  phone: "(416) 475-4166",
+  phoneHref: "tel:+14164754166",
+  address: "11 Lisa St. #712, Brampton, ON",
+  fullAddress: "11 Lisa St. #712, Brampton, ON L6T 4T8",
+  hours: "Call to confirm hours",
+  serviceAreas: ["Brampton", "Nearby areas"],
+  rating: "5.0",
+  reviewCountLabel: "Google reviews",
 } as const;
 
 export const NAV_LINKS = [
@@ -52,7 +54,7 @@ export const SERVICES = [
     id: "emergency",
     title: "Emergency Plumbing",
     description:
-      "24/7 response for floods, burst pipes, and no-hot-water crises. We stabilize first, then fix it right.",
+      "Fast response for floods, burst pipes, and no-hot-water crises. We stabilize first, then fix it right.",
     icon: "siren",
   },
   {
@@ -119,32 +121,22 @@ export const PROCESS_STEPS = [
 
 export const REVIEWS = [
   {
-    name: "Priya S.",
+    name: "Nasim Akhtar",
     neighborhood: "Brampton, ON",
     rating: 5,
-    quote:
-      "They replaced our water heater the same week we called. Fair price, zero mess, and hot water by dinner.",
+    quote: "Highly professional work as per the agreement.",
   },
   {
-    name: "Marcus T.",
-    neighborhood: "Mississauga, ON",
+    name: "Yasser Ahmad",
+    neighborhood: "Brampton, ON",
     rating: 5,
-    quote:
-      "Emergency leak at 11pm — they showed up, stopped the damage, and explained every step. True pros.",
+    quote: "Highly recommend Soft Water Plumbing for any plumbing work.",
   },
   {
-    name: "Elena R.",
-    neighborhood: "Caledon, ON",
+    name: "Antonio Ricci",
+    neighborhood: "Brampton, ON",
     rating: 5,
-    quote:
-      "Fixture install looked showroom-perfect. They took the time to get the alignment and seal right.",
-  },
-  {
-    name: "James K.",
-    neighborhood: "Vaughan, ON",
-    rating: 5,
-    quote:
-      "Straight talk on pricing and a clean pipe repair. I'll call Gatesgill first for anything plumbing.",
+    quote: "Highly recommend their services!",
   },
 ] as const;
 

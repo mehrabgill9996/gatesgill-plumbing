@@ -11,13 +11,13 @@ export function Reviews() {
       <div className="container-site">
         <SectionHeading
           eyebrow="Reviews"
-          title="What neighbours say after the install"
-          description="Real feedback from homeowners across Brampton and nearby cities."
+          title="What neighbours say after the job"
+          description="Google reviews from customers in Brampton and nearby areas."
           align="center"
           className="mx-auto"
         />
 
-        <div className="mt-12 grid gap-5 sm:grid-cols-2">
+        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {REVIEWS.map((review, index) => (
             <motion.blockquote
               key={review.name}

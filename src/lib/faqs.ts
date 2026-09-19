@@ -62,9 +62,9 @@ export const FAQ_CATEGORIES: FAQCategory[] = [
           "Burst pipes, major leaks, sewage backups, no water, or no hot water in winter. If you're unsure, call us — we'll tell you honestly whether it can wait.",
       },
       {
-        question: "Are you available 24/7?",
+        question: "How quickly can you come out?",
         answer:
-          "Yes. Emergency calls are answered day and night across Brampton and nearby cities. Response times vary with traffic and demand, but we move fast.",
+          "Call (416) 475-4166 and we'll tell you honestly whether it can wait. We serve Brampton and nearby areas and move fast when something can't wait.",
       },
     ],
   },
@@ -75,7 +75,7 @@ export const FAQ_CATEGORIES: FAQCategory[] = [
       {
         question: "Which cities do you serve?",
         answer:
-          "We're based in Brampton and regularly serve Mississauga, Caledon, and Vaughan. Outside those areas? Reach out — we often can help nearby communities too.",
+          "We're based at 11 Lisa St. in Brampton and serve Brampton and nearby areas. Outside that? Reach out — we often can help neighbouring communities too.",
       },
       {
         question: "Do you work on both houses and condos?",

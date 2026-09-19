@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { MapPin, Phone } from "lucide-react";
 import { NAV_LINKS, SITE } from "@/lib/constants";
 
 export function Footer() {
@@ -8,11 +8,12 @@ export function Footer() {
       <div className="container-site grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-4">
         <div className="lg:col-span-1">
           <p className="font-display text-xl font-bold">
-            Gatesgill <span className="text-copper-light">Plumbing</span>
+            Soft Water{" "}
+            <span className="text-copper-light">Plumbing &amp; Drain</span>
           </p>
           <p className="mt-3 text-sm leading-relaxed text-white/70">
-            {SITE.tagline} Licensed plumbing installs and repairs across the
-            Greater Toronto Area — based in Brampton.
+            {SITE.tagline} Plumber in Brampton, Ontario — serving Brampton and
+            nearby areas.
           </p>
         </div>
 
@@ -71,15 +72,6 @@ export function Footer() {
               >
                 <Phone className="h-4 w-4 text-copper-light" />
                 {SITE.phone}
-              </a>
-            </li>
-            <li>
-              <a
-                href={SITE.emailHref}
-                className="inline-flex items-center gap-2 transition hover:text-white"
-              >
-                <Mail className="h-4 w-4 text-copper-light" />
-                {SITE.email}
               </a>
             </li>
           </ul>

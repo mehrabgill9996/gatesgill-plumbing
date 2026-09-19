@@ -12,11 +12,11 @@ import { SITE } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `${SITE.name} | Brampton Plumbing Installs & Repairs`,
   description:
-    "Gatesgill Plumbing — licensed installs, drain cleaning, pipe repair, and emergency service in Brampton, ON. Get your free install quote in under 2 minutes.",
+    "Soft Water Plumbing & Drain — residential and commercial plumbing in Brampton, ON. New construction or renovation. Get your free install quote today.",
   openGraph: {
-    title: "Plumbing Done Right, The First Time | Gatesgill Plumbing",
+    title: "Plumbing Done Right, The First Time | Soft Water Plumbing & Drain",
     description:
-      "Free install quotes. Licensed & insured. Serving Brampton, Mississauga, Caledon, and Vaughan.",
+      "5.0 Google reviews. Serving Brampton and nearby areas. Call (416) 475-4166.",
   },
 };
 

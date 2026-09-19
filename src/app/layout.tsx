@@ -26,14 +26,14 @@ export const metadata: Metadata = {
     template: `%s | ${SITE.name}`,
   },
   description:
-    "Licensed plumbing installs, repairs, and 24/7 emergency service in Brampton, Mississauga, Caledon, and Vaughan. Get a free install quote today.",
+    "Soft Water Plumbing & Drain — residential and commercial plumbing in Brampton, Ontario. New construction or renovation. Call (416) 475-4166.",
   openGraph: {
     type: "website",
     locale: "en_CA",
     siteName: SITE.name,
-    title: `${SITE.name} | Plumbing Done Right`,
+    title: `${SITE.name} | Brampton Plumber`,
     description:
-      "Free install quotes. Upfront pricing. Licensed & insured plumbers serving Brampton and the GTA.",
+      "Residential and commercial plumbing services in Brampton and nearby areas. New construction or renovation.",
   },
 };
 

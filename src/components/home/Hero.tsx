@@ -2,13 +2,13 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Clock3, Phone, ShieldCheck, Star, Wrench } from "lucide-react";
+import { Building2, Phone, ShieldCheck, Star, Wrench } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { SITE } from "@/lib/constants";
 
 const TRUST_BADGES = [
   { label: "Licensed & Insured", icon: ShieldCheck },
-  { label: "24/7 Emergency", icon: Clock3 },
+  { label: "Residential & Commercial", icon: Building2 },
   { label: "5-Star Rated", icon: Star },
 ] as const;
 
@@ -51,7 +51,7 @@ export function Hero() {
             animate="show"
             custom={0}
           >
-            Brampton &amp; GTA
+            Brampton, Ontario
           </motion.p>
 
           <motion.h1
@@ -71,8 +71,9 @@ export function Hero() {
             animate="show"
             custom={0.24}
           >
-            Licensed installs, repairs, and emergency response — with upfront
-            pricing and a crew that treats your home like their own.
+            Residential and commercial plumbing for new construction or
+            renovation — with upfront pricing and a crew that treats your home
+            like their own.
           </motion.p>
 
           <motion.div
@@ -158,7 +159,7 @@ export function Hero() {
                 ))}
               </span>
               <span className="font-display font-medium tracking-tight">
-                4.9 · 210+ reviews
+                5.0 Google reviews
               </span>
             </li>
           </motion.ul>
@@ -190,7 +191,7 @@ export function Hero() {
         </div>
         <p className="font-display text-3xl font-bold text-ink">500+</p>
         <p className="mt-1 text-sm leading-snug text-slate-text">
-          Installs completed across Brampton &amp; the GTA
+          Plumbing work completed across Brampton &amp; nearby areas
         </p>
       </div>
     </section>
